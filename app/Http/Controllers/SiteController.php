@@ -12,6 +12,6 @@ class SiteController extends Controller
     {
 
         $this->sendGuzzleRequest('tags', [], 'get');
-        return view('welcome');
+        return view('pages.home');
     }
 }

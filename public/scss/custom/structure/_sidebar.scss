@@ -1,0 +1,123 @@
+.sidebar-nav {
+    background: #fff;
+}
+.sidebar-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #f6f6f6;
+}
+
+.sidebar-nav .metismenu {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/* .sidebar-nav .metismenu li + li {
+  margin-top: 5px;
+} */
+.sidebar-nav .metismenu li:last-child {
+  margin-bottom: 0px;
+}
+
+
+.sidebar-nav .metismenu > li {
+    /*-webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+.sidebar-nav .metismenu > li > ul > li{
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.sidebar-nav .metismenu {
+    a {
+        position: relative;
+        display: flex;
+        padding: 13px 15px;
+        color: #adb5bd;
+        outline-width: 0;
+        transition: all .3s ease-out;
+        .feather {
+            height: 16px;
+        }
+    }
+}
+
+.sidebar-nav .metismenu ul a {
+    padding: 10px 15px 10px 30px;
+}
+
+.sidebar-nav .metismenu ul ul a {
+    padding: 10px 15px 10px 45px;
+}
+
+.sidebar-nav .metismenu ul ul ul a {
+    color: #03a1e7;
+}
+
+.sidebar-nav .metismenu.for-category ul ul a {
+    color: #03a1e7;
+}
+
+.sidebar-nav .metismenu a:hover,
+.sidebar-nav .metismenu a:focus,
+.sidebar-nav .metismenu a:active,
+.sidebar-nav .metismenu .mm-active > a {
+    color: #525556;
+}
+
+.sidebar-nav .metismenu:not(.for-category) > .mm-active > a {
+    color: #f8f9fa;
+    text-decoration: none;
+    background: #03a1e7;
+}
+
+.sidebar-nav .metismenu .has-arrow.plus:after {
+    content: "+";
+    border: none;
+    font-size:24px;    
+    transform: rotate(0deg) translateY(0%);
+    -webkit-transform: rotate(0deg) translateY(0%);
+    top:7px;
+    left: auto;
+    right: 1em;
+    transition: 0s;
+} 
+.sidebar-nav .metismenu .has-arrow.plus[aria-expanded=true]:after, 
+.metismenu .mm-active>.has-arrow.plus:after {
+    content: "_";
+     font-size:21px;
+     right:26px;
+     top:0px;
+}
+
+.sidebar-nav .metismenu .has-arrow:after {
+    left: 30px;
+    right: auto;
+    border-width: 0 0 1px 1px;
+}
+
+.sidebar-nav .metismenu.for-category .has-arrow:not(.plus):after {
+    left: 15px;
+}
+
+.sidebar-nav .metismenu .has-arrow:not(.plus)[aria-expanded=true]:after, 
+.sidebar-nav .metismenu .mm-active>.has-arrow:not(.plus):after {
+    transform: rotate(-225deg) translateY(-50%);
+}
