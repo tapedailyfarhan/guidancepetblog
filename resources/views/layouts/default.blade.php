@@ -8,12 +8,17 @@
 
 <body>
 
-<!-- Main wrapper - style you can find in reboot.scss -->
 <div id="main-wrapper">
 
-    <!-- Topbar header - style you can find in structure/navbar.scss -->
     <span class="drop-shadow"></span>
+
+    @include('includes.head')
+
     @include('includes.navbar')
+
+    @include('includes.mobile_menu')
+
+    {{--@include('includes.category_nave')--}}
 
     @yield('content')
 

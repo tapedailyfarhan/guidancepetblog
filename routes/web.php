@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'SiteController@callHomePage');
+Route::get('/category', 'SiteController@callCategoryPage');
+Route::get('/blog', 'SiteController@callBlogPage');
