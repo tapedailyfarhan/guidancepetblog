@@ -1,0 +1,27 @@
+// 
+// For Floor Plans Section
+// 
+.property-tabs.nav-pills {
+	.nav-item {
+		width: 300px;
+		.nav-link {
+			background: $gray-300;
+			color: $gray-600;
+			border: 1px solid $gray-600;
+			padding: $property-tab-link-padding;
+			&.active {
+				background: $danger;
+				color: $white;
+				border: 1px solid $danger;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.property-tabs.nav-pills {
+		.nav-item {
+			width: 170px;
+		}
+	}
+}

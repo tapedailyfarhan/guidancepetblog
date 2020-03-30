@@ -1,0 +1,119 @@
+// 
+// Gredient Border
+// 
+
+.gradient-border,
+.gredient-border-indicators {
+    background: linear-gradient(160deg, $gray-600, $gray-300);
+    padding: 1px 0px 1px 1px;
+}
+
+.gradient-border {
+	&:last-child {
+		padding: 1px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.gradient-border {
+		padding: 1px 1px 0;
+	}
+}
+
+// 
+// Content First Latter
+// 
+.latter-content {
+	// &::first-letter {
+	// 	text-transform: uppercase;
+	// 	font-size: 60px;
+	// }
+	line-height: 38px;
+}
+
+// 
+// For Text Gredient
+// 
+.text-gredient {
+	background: linear-gradient(-200deg, rgba(191,195,202,1) 0%, rgba(232,233,236,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 60px;
+}
+
+@include media-breakpoint-down(sm) {
+	.text-gredient {
+		font-size: 40px;
+	}
+}
+
+// 
+// For Banner Property Section
+// 
+.playvideo-img {
+	.stand-img {
+		bottom: 0;
+	}
+	.stand-text {
+		bottom: 31px;
+    	left: 30px;
+	}
+}
+
+@include media-breakpoint-only(md) {
+	.playvideo-img {
+		.stand-img {
+			left: 0;
+    		right: 0;
+		}
+		.stand-text {
+	    	left: 182px;
+		}
+	}
+}
+
+// 
+// For Agent Section
+// 
+.agent-section {
+	background: url(../../assets/images/agentsection-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+    padding: 100px 0;
+}
+
+// 
+// For Contact Section Side Image
+// 
+.sideproperty-img {
+	position: absolute;
+	top: -30%;
+    left: -28%;
+    width: 450px;
+}
+
+@include media-breakpoint-down(sm) {
+	.sideproperty-img {
+		position: relative;
+		top: unset;
+		left: unset;
+	}
+}
+
+// 
+// For Call to Action Section
+// 
+.c2a-section {
+	background: url(../../assets/images/c2a-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	padding: 70px 0;
+}
+
+// 
+// For Footer Social shareble Images
+// 
+.footer-img {
+	height: 96px;
+	width: 100%;
+}

@@ -1,0 +1,223 @@
+// -------------------------------
+// Theme Fonts
+// -------------------------------
+
+@import '../../fonts/fonts';
+
+// ----------------------------------
+// All Colors of Bootstrap Overrides
+// ----------------------------------
+
+$white: #fff !default;
+$gray-100: #f3f6f8 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #e9eaed !default;
+$gray-400: #ced4da !default;
+$gray-500: #a1aab2 !default;
+$gray-600: #d1d1d1 !default;
+$gray-700: #4F5467 !default;
+$gray-800: #374046 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #005678 !default;
+$indigo: #6610f2 !default;
+$purple: #03a1e7 !default;
+$pink: #e83e8c !default;
+$red: #ff6028 !default;
+$orange: #fb8c00 !default;
+$yellow: #fcd433 !default;
+$green: #00ab78 !default;
+$teal: #20c997 !default;
+$cyan: #01caf1 !default;
+
+$colors: (blue: $blue,
+    indigo: $indigo,
+    purple: $purple,
+    pink: $pink,
+    red: $red,
+    orange: $orange,
+    yellow: $yellow,
+    green: $green,
+    teal: $teal,
+    cyan: $cyan,
+    white: $white,
+    gray: $gray-600,
+    gray-dark: $gray-800);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $purple !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$cyan: $cyan !default;
+$orange: $orange !default;
+$theme-colors: () !default;
+
+$theme-colors: map-merge(("primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark,
+        "cyan": $cyan,
+        "orange": $orange,
+        "purple": $purple),
+    $theme-colors);
+
+// -----------------------------------------------
+// Typography
+// -----------------------------------------------
+
+$font-size-base: 1rem;
+$font-family-sans-serif: 'ProximaNova-Regular',
+sans-serif !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$font-weight-base: 500 !default;
+
+$h1-font-size: 36px !default;
+$h2-font-size: 30px !default;
+$h3-font-size: 24px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+
+$link-color: $primary !default;
+$link-hover-color: $info !default;
+
+// -----------------------------------
+// Typography Settings of Fonts
+// -----------------------------------
+
+$headings-margin-bottom: (1rem / 2) !default;
+$headings-font-weight: 400 !default;
+$headings-font-family: 'ProximaNova-Bold',
+serif !default;
+
+//grid
+
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1170px) !default;
+
+// ------------------------------------------------------------------------
+// Quickly modify global styling by enabling or disabling optional features.
+// ------------------------------------------------------------------------
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// --------------------------------
+// Body Color & bgColor Settings
+// --------------------------------
+
+$body-bg: #fff !default;
+$body-color: #687e87 !default;
+
+// -------------------------------
+// Dropdowns Settings
+// -------------------------------
+$dropdown-item-padding-x: 1rem !default;
+$dropdown-item-padding-y: .65rem !default;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+$dropdown-link-color: $body-color !default;
+$dropdown-box-shadow: 1px 15px 15px rgba(0, 0, 0, .1) !default;
+$dropdown-border-width: 0 !default;
+
+// -------------------------------
+// Forms
+// -------------------------------
+
+$input-group-addon-bg: #f4f7f9;
+$input-group-addon-border-color: $gray-200;
+$input-btn-focus-color: rgba(0, 0, 0, .25) !default;
+$input-focus-border-color: rgba(0, 0, 0, 0.25) !default;
+$custom-control-indicator-active-bg: rgba(0, 0, 0, 35%) !default;
+$custom-select-indicator: url(../../assets/images/custom-select.png) !default;
+$input-btn-focus-box-shadow: transparent !default;
+$custom-select-focus-box-shadow: transparent !default;
+$custom-select-bg-size: 12px 7px !default;
+$custom-select-indicator: str-replace(url(""), "%23") !default;
+$input-color: $gray-800 !default;
+$input-border-color: #e0e9ed !default;
+$input-border-radius: 0 !default;
+$input-placeholder-color: $body-color !default;
+$input-padding-x: 1.5rem !default;
+
+// -------------------------------
+// Border settings
+// -------------------------------
+
+$border-width: 1px !default;
+$border-color: #cedadf !default;
+$border-radius: 2px !default;
+$border-radius-lg: 2px !default;
+$border-radius-sm: 1px !default;
+
+// -------------------------------
+// Tabs active bg settings
+// -------------------------------
+
+$nav-tabs-link-active-bg: $white !default;
+
+// -------------------------------
+// Navbar dark & light font colors
+// -------------------------------
+
+$navbar-padding-y: 0 !default;
+$navbar-dark-color: rgba($white, .5) !default;
+$navbar-dark-hover-color: rgba($white, 1) !default;
+$navbar-light-color: #687e87 !default;
+$navbar-light-hover-color: $info !default;
+
+// -------------------------------
+// Card Related Settings Here
+// -------------------------------
+
+$card-spacer-x: 15px; // Card Padding
+$card-border-width: 0 !default;
+$card-border-radius: .25rem !default;
+$card-border-color: $gray-200 !default;
+$card-columns-margin: 20px !default;
+
+// -------------------------------
+// Badge
+// -------------------------------
+
+$badge-font-weight: 400 !default;
+$badge-pill-padding-x: 0.5rem !default;
+
+$link-hover-decoration: none !default;
+
+
+// Shadow
+
+$box-shadow-sm: 0px 2px 9px 0px rgba(169, 184, 200, 0.2) !default;
+$text-muted: #bbbfc7 !default;
+
+// nav-pills
+
+$nav-pills-link-active-bg: $danger !default;
+$nav-pills-border-radius: 0px !default;
+
+// Breadcrumb
+
+$breadcrumb-divider: quote(">");
+$breadcrumb-bg: $white !default;
+$breadcrumb-divider-color: $info !default;
+$breadcrumb-active-color: $info !default;

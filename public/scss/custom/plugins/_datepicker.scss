@@ -1,0 +1,42 @@
+@media (min-height: 33.875em) {
+    .picker--opened .picker__frame {
+        top: 30%;
+        bottom: auto;
+    }
+}
+
+.dtp>.dtp-content>.dtp-date-view>header.dtp-header {
+    background: #ff8236;
+}
+
+.dtp div.dtp-date,
+.dtp div.dtp-time,
+.dtp table.dtp-picker-days tr>td>a.selected {
+    background: $danger;
+}
+
+.dtp .p10>a {
+    color: $gray-0;
+}
+
+.datepicker .day,
+.datepicker .dow {
+    padding: 5px 10px;
+}
+
+.dtp div.dtp-picker {
+	padding: 0;
+}
+
+.dtp table.dtp-picker-days tr > td > a, 
+.dtp .dtp-picker-time > a {
+	border: 1px solid $border-color;
+}
+
+.dtp div.dtp-picker-month, .dtp div.dtp-actual-time {
+	font-weight: 600;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+	background: $gray-300;
+}

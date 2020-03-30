@@ -1,0 +1,95 @@
+// 
+//  For Banner Section
+// 
+.property-carousel {
+	.carousel-control-next {
+		right: -75px;
+	}
+	.carousel-control-prev {
+		left: -75px;
+	}
+	.ref-icon {
+		width: 38px;
+		height: 38px;
+		color: $gray-600;
+	}
+	.carousel-indicators li {
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.banner-img {
+		height: 800px;
+	}
+	.carousel-caption {
+		top: 30%;
+	}
+	.carousel-indicators {
+		bottom: 14%;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.property-carousel {
+		.carousel-control-next {
+			right: 0;
+		}
+		.carousel-control-prev {
+			left: 0;
+		}
+		.banner-img {
+			height: 100%;
+		}
+		.carousel-indicators {
+			display: none;
+		}
+		.carousel-caption {
+			top: 11%;
+		}
+		.ref-icon {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+@media (max-width: 4499px) and (min-width: 2500px) {
+	.property-carousel {
+		.carousel-control-next {
+			right: -145px;
+		}
+		.carousel-control-prev {
+			left: -145px;
+		}
+	}
+}
+
+// 
+// For Banner Property Section
+// 
+
+.bannerproperty-carousel {
+	.carousel-control-next, 
+	.carousel-control-prev {
+		top: 130px;
+		width: unset;
+	    height: 40px;
+	    opacity: 1;
+	    padding: 4px 1px;
+		.inner-bg {
+			padding: 6px 7px;
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.bannerproperty-carousel {	
+		.carousel-control-next, 
+		.carousel-control-prev {
+			top: 144px;
+			padding: 21px 1px;
+		}
+	}
+}

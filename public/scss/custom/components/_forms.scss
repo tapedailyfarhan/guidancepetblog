@@ -1,0 +1,10 @@
+// 
+// For Global Placeholder Color
+// 
+input.form-control {
+	::-webkit-input-placeholder,
+	:-ms-input-placeholder,
+	::placeholder { 
+	  color: #2c303a;
+	}
+}
