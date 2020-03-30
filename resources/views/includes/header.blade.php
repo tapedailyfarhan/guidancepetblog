@@ -5,7 +5,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <!-- Favicon icon -->
-<link rel="icon" type="image/png" sizes="16x16" href="">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/cat.png') }}">
 <link rel="stylesheet" href="{{ asset('assets/vendor/owl.carousel/dist/assets/owl.carousel.min.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/vendor/metis/dist/metisMenu.min.css') }}" />
 <!-- --------------------------------------------------------------------------------------- -->

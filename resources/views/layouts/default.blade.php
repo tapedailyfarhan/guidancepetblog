@@ -9,16 +9,17 @@
 <body>
 
 <div id="main-wrapper">
-
     <span class="drop-shadow"></span>
 
     @include('includes.head')
 
-    @include('includes.navbar')
+    @if (Request::is('/'))
+        @include('includes.navbar')
+    @else
+        @include('includes.category_nave')
+    @endif
 
     @include('includes.mobile_menu')
-
-    {{--@include('includes.category_nave')--}}
 
     @yield('content')
 
