@@ -28,8 +28,8 @@ trait GuzzleTrait {
         $method = trim(strtoupper($method));
         $endpoint = trim($endpoint);
         $baseUrl = (App::environment() === 'local')
-            ? env("API_LOCAL_URL", 'API_LOCAL_URL')
-            : env("API_PROD_URL", 'API_PROD_URL');
+            ? env("API_LOCAL_URL", 'http://127.0.0.1:8000/api/')
+            : env("API_PROD_URL", 'http://api.guidance.pet/api/');
         $config = [
             'base_uri' => $baseUrl,
             'headers' => [
